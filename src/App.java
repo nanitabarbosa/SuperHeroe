@@ -9,6 +9,8 @@ class Personaje {
     int multiplicador = 2;
     int recuperador_hp = 20;
 
+    //metodos
+
     public Personaje(String nombre, int fuerza, int velocidad, int vida_hp) {
         this.nombre = nombre;
         this.fuerza = fuerza;
@@ -70,14 +72,14 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<SuperHero> heroes = new ArrayList<>();
-        heroes.add(new SuperHero("Capitana America", 80, 100, 100));
-        heroes.add(new SuperHero("Black Widow", 55, 80, 95));
-        heroes.add(new SuperHero("Wanda Maximoff", 78, 70, 90));
+        heroes.add(new SuperHero("Capitana America", 22, 100, 100));
+        heroes.add(new SuperHero("Black Widow", 15, 80, 95));
+        heroes.add(new SuperHero("Wanda Maximoff", 18, 70, 90));
 
         ArrayList<Villano> villanos = new ArrayList<>();
-        villanos.add(new Villano("Mística", 85, 80, 100));
-        villanos.add(new Villano("Nebula", 72, 90, 90));
-        villanos.add(new Villano("Hela", 60, 68, 100));
+        villanos.add(new Villano("Mística", 25, 80, 100));
+        villanos.add(new Villano("Nebula", 12, 90, 90));
+        villanos.add(new Villano("Hela", 20, 68, 100));
 
         System.out.println("-----------------------------------------------");
         System.out.println("BIENVENIDOS A LA BATALLA DEL UNIVERSO DE MARVEL");
